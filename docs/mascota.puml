@@ -1,0 +1,48 @@
+@startuml mascota
+
+
+class Mascota
+class Alimento
+class Juguete
+class Pelota
+class Gato
+class Perro
+class Hueso
+class Pez
+class Pecera
+class Salud
+class Collar
+class Baño 
+class Arenero
+class Parque 
+class Algas
+class Hilaza
+class Dormitorio
+class Cama
+
+Alimento--o Mascota
+Mascota o-- Juguete
+Carne --|> Alimento
+Pelota--|> Juguete
+Gato--|>Mascota
+Perro--|>Mascota
+Pez --|>Mascota
+Perro o-- Cama
+Gato o-- Cama
+Dormitorio *-- Cama
+Gato o-- Hilaza
+Hilaza --|> Juguete
+Pez o-- Algas
+Algas --|> Alimento
+Baño *-- Parque
+Perro o-- Parque
+Baño *-- Arenero
+Arenero o-- Gato
+Perro *-- Collar
+Perro *-- Salud
+Gato *-- Salud
+Pez *-- Salud
+Perro o-- Hueso
+Pez o--Pecera
+
+@enduml
